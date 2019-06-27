@@ -17,3 +17,4 @@ $output = "/Users/april/Study/Blog/public/img-try";//压缩的结果会被保存
 $tinyImg->compressImgsFolder($key,$input,$output); ?>
 </body>
 </html>
+
