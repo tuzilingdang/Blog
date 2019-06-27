@@ -1,0 +1,88 @@
+footer
+  margin-top 1em
+  background-color rgba(0,0,0,0.7)
+  padding 0 2% 0.5em
+  height 3rem
+  bottom 0px
+  position sticky
+
+#footer
+  width 95%
+  margin 0 auto
+  overflow hidden
+  position relative
+  height 3rem
+
+.info
+  if ShowCustomFont
+    font-family font-custom-family
+    font-smoothing()
+    font-size font-size+50
+    line-height 1.3em
+  else
+    font-family font-default
+    line-height line-height+0.15
+  width 90%
+  margin 0 auto
+  color color-white
+  @media mini
+    margin 4.5em 0 2em 0
+    float left
+    width 75%
+
+.social-font
+  margin 0 auto
+  float left
+  padding-left 3%
+  @media phone
+    padding-left 20%
+  @media mini
+    width 18em 
+    position absolute  
+    right -3em
+    top 3em
+  a
+    float left
+    display block
+    width 14%
+    color color-white
+    font-size font-size+80
+    padding 0.5em
+    @media tablet
+      padding 0.3em
+    &:hover:before
+      color color-blue
+    &[title="weibo"]::before,&[title="twitter"]::before,&[title="github"]::before,&[title="facebook"]::before,&[title="linkedin"]::before
+      font-family font-icon-family
+      font-smoothing()
+    &[title="weibo"]::before
+      content "\f18a"
+    &[title="twitter"]::before
+      content "\f099"
+    &[title="github"]::before
+      content "\f09b"
+    &[title="facebook"]::before
+      content "\f09a"
+    &[title="linkedin"]::before
+      content "\f08c"
+ 
+.copyright
+  if ShowCustomFont
+    font-smoothing()
+    font-family font-custom-family
+  else
+    font-family font-default
+    font-size 0.6em
+
+  width 100%
+  color color-white
+  text-align center
+  margin-left auto
+  margin-right auto
+  margin-top 1rem 
+  @media mini
+    margin-top 1rem 
+  a
+    color color-white
+    &:hover
+      color color-blue
