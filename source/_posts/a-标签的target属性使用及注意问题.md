@@ -56,7 +56,7 @@ href属性用来描述跳转链接的地址，target用来定义被链接的文�
 
 可以试一下最简单的：
 
-```
+```html
 	<script type="text/javascript">
 		window.opener.location = "http://www.baidu.com";
 	</script>
